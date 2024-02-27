@@ -1,6 +1,5 @@
 package introducao;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Exercicio1 {
@@ -23,10 +22,7 @@ public class Exercicio1 {
 		novoSalario = salario + abono;
 		
 		// Saída de dados
-		DecimalFormat df = new DecimalFormat(); // Classe que formata decimais
-		df.applyPattern("#,##0.00"); 
-		
-		System.out.print("Novo salário: R$" + df.format(novoSalario));
+		System.out.printf("Novo salário: R$%.2f" , novoSalario);
 
 	}
 

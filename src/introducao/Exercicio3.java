@@ -1,6 +1,5 @@
 package introducao;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Exercicio3 {
@@ -11,7 +10,6 @@ public class Exercicio3 {
 		
 		// Entrada de dados
 		Scanner leia = new Scanner(System.in);
-		// leia.useLocale(Locale.US); // Coloca o "." como separador
 		
 		System.out.print("Salário bruto: R$ ");
 		salarioBruto = leia.nextFloat();
@@ -29,13 +27,9 @@ public class Exercicio3 {
 		salarioLiquido = salarioBruto + adicionalNoturno + (horasExtras * 5) - descontos;
 		
 		// Saída de dados
-		DecimalFormat df = new DecimalFormat(); // Classe que formata decimais
-		df.applyPattern("#,##0.00"); 
+		System.out.printf("Salário líquido: R$ %.2f" , salarioLiquido);
 		
-		System.out.print("Salário líquido: R$" + df.format(salarioLiquido));
-		
-		
-
+	
 	}
 
 }

@@ -7,7 +7,7 @@ public class Exercicio4 {
 	public static void main(String[] args) {
 		
 		// Variáveis
-		float n1, n2, n3, n4, produto12, produto34, diferenca;
+		float n1, n2, n3, n4, diferenca;
 		
 		// Entrada de dados
 		Scanner leia = new Scanner(System.in);
