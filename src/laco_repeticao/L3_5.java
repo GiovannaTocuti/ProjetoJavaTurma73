@@ -26,5 +26,7 @@ public class L3_5 {
 		
 		// Saída de dados
 		System.out.print("A soma dos números positivos é: " + soma);
+		
+		leia.close();
 	}
 }

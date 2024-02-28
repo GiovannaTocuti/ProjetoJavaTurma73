@@ -32,6 +32,8 @@ public class L2_3 {
 		// Saída de dados
 		System.out.println("Total de pessoas menores de 21 anos: " + menor21);
 		System.out.println("Total de pessoas maiores de 50 anos: " + maior50);
+		
+		leia.close();
 
 	}
 
