@@ -23,8 +23,8 @@ public class L1_1 {
 				auxiliar = posicao;
 			}
 		}	
-		// Saída
 		
+		// Saída	
 		if(resposta == true) {
 			System.out.print("O número " + numProcurado + " está localizado na posição: " + auxiliar);
 		}
