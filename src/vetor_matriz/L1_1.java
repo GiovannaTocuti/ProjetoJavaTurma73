@@ -1,7 +1,5 @@
 package vetor_matriz;
-
 import java.util.Scanner;
-
 public class L1_1 {
 
 	public static void main(String[] args) {
@@ -25,6 +23,7 @@ public class L1_1 {
 				auxiliar = posicao;
 			}
 		}	
+		// Saída
 		
 		if(resposta == true) {
 			System.out.print("O número " + numProcurado + " está localizado na posição: " + auxiliar);
@@ -34,5 +33,4 @@ public class L1_1 {
 		}
 			
 	}
-
 }

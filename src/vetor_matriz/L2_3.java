@@ -1,29 +1,21 @@
 package vetor_matriz;
-
 import java.util.Scanner;
-
 public class L2_3 {
-
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {	
 		int matriz[][] = new int[3][3];
 		int elementPrincipal[] = new int[3];
 		int elementSecundaria[] = new int[3];
 		int linha, coluna;
-		int somaPrincipal, somaSecundaria;
-		
+		int somaPrincipal, somaSecundaria;	
 		somaPrincipal = 0;
-		somaSecundaria = 0;
-		
-		Scanner leia = new Scanner(System.in);
-		
+		somaSecundaria = 0;	
+		Scanner leia = new Scanner(System.in);		
 		for(linha = 0; linha <= 2; linha++) {
 			for(coluna = 0; coluna <= 2; coluna++) {
 				System.out.println("Digite o elemento " + linha + ", " + coluna + " da matriz:");
 				matriz[linha][coluna] = leia.nextInt();			
 			}	
-		}
-		
+		}	
 		for(linha = 0; linha <= 2; linha++) {
 			for(coluna = 0; coluna <= 2; coluna++) {
 				if(linha == coluna) {
@@ -36,15 +28,13 @@ public class L2_3 {
 						elementSecundaria[linha] = matriz[linha][coluna];
 						somaSecundaria = somaSecundaria + matriz[linha][coluna];
 					}
-					break;
-					
+					break;		
 				case 1:
 					if(coluna == 1) {
 						elementSecundaria[linha] = matriz[linha][coluna];
 						somaSecundaria = somaSecundaria + matriz[linha][coluna];
 					}
 					break;
-					
 				case 2:
 					if(coluna == 0) {
 						elementSecundaria[linha] = matriz[linha][coluna];
@@ -54,28 +44,15 @@ public class L2_3 {
 				}
 			}		
 		}
-		
 		System.out.println("Elementos da diagonal principal:");
 		for(coluna = 0; coluna <= 2; coluna++) {
 			System.out.print(elementPrincipal[coluna] + " ");
 		}
-		
 		System.out.println("\n \nElementos da diagonal secundaria:");
 		for(coluna = 0; coluna <= 2; coluna++) {
 			System.out.print(elementSecundaria[coluna] + " ");
-		}
-		
-		System.out.println("\n \nSoma dos elementos da diagonal principal:\n" + somaPrincipal);
-		
-		System.out.println("\n \nSoma dos elementos da diagonal secundária:\n" + somaSecundaria);
-
-
-		
-		
-		
-		
-		
-		
+		}		
+		System.out.println("\n \nSoma dos elementos da diagonal principal:\n" + somaPrincipal);		
+		System.out.println("\n \nSoma dos elementos da diagonal secundária:\n" + somaSecundaria);	
 	}
-
 }
