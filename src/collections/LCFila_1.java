@@ -17,7 +17,6 @@ public class LCFila_1 {
 		Scanner leia = new Scanner(System.in);
 
 		continua = true;
-		clientes.add(null);
 
 		System.out.println("*****************************");
 		System.out.println("1 - Adicionar Cliente na Fila");
@@ -35,8 +34,8 @@ public class LCFila_1 {
 			switch (opcao) {
 			case 1:
 				System.out.print("Digite o nome: ");
-				nomeCliente = leia.next();
-				clientes.add(nomeCliente);
+				leia.skip("\\R?");
+				clientes.add(leia.nextLine());
 				System.out.println("Fila: ");
 				System.out.println(clientes);
 				System.out.println("\nCliente adicionado!\n");
@@ -48,8 +47,8 @@ public class LCFila_1 {
 				break;
 				
 			case 3:
-				clientes.remove();
 				if(clientes.isEmpty() != true) {
+					clientes.remove();
 					System.out.println(clientes);
 					System.out.println("\nO cliente foi chamado!\n");
 				}
